@@ -107,7 +107,7 @@
 \renewcommand{\arraystretch}{1.25}
 
 
-%\keywords{Pixel, CMOS, Beam telescope, resolution, tracker} % need to be specified during submission
+%\keywords{implants, R&D, resolution, tracker} % need to be specified during submission
 
 \begin{document}
 \ifdefined\notFOREPJ
@@ -146,9 +146,10 @@
 %Philipp Roloff,	CERN 		philipp.roloff@cern.ch
 %I. Rubinskiy,		CFEl/CUIigor	igor.rubinskiy@cfel.de
 
-\title{Resolution studies with the DATURA beam telescope}
+\title{Enhanced lateral drift sensors: concept and development}
 \author{
-H.~Jansen${}^{\textrm{a,}}$\footnote[*]{Corresponding author: hendrik.jansen@desy.de}%,
+A.~Velyka${}^{\textrm{a,}}$\footnote[*]{Corresponding author: anastasiia.velyka@desy.de}, %
+H.~Jansen${}^{\textrm{a,}}$\footnote[**]{Corresponding author: hendrik.jansen@desy.de}%,
 %S.~Spannagel${}^{\textrm{a}}$, 
 %J.~Behr${}^{\textrm{a,}}$\footnote{Now at Institut f\"ur Unfallanalysen, Hamburg, Germany},
 %A.~Bulgheroni${}^{\textrm{b,}}$\footnote{Now at KIT, Karlsruhe, Germany},
@@ -184,15 +185,19 @@ ${}^{\textrm{a}}$ Deutsches Elektronen-Synchrotron DESY, Hamburg, Germany\\
 
 \begin{abstract}
 \noindent
-Detailed studies of the resolution of a $\eudet$-type beam telescope are carried out using the $\Datura$ beam telescope as an example. 
-The $\eudet$-type beam telescopes make use of CMOS $\Mimosa$ pixel detectors for particle tracking allowing for precise characterisation of particle-sensing devices. 
-A profound understanding of the performance of the beam telescope as a whole is obtained by a detailed characterisation of the sensors themselves. 
-The differential intrinsic resolution as measured in a $\Mimosa$ sensor is extracted using an iterative pull method, and various quantities
- that depend on the size of the cluster produced by a traversing charged particle are discussed:
- the residual distribution, the intra-pixel residual-width distribution and the intra-pixel density distribution of track incident positions.\\
+%Detailed studies of the resolution of a $\eudet$-type beam telescope are carried out using the $\Datura$ beam telescope as an example. 
+%The $\eudet$-type beam telescopes make use of CMOS $\Mimosa$ pixel detectors for particle tracking allowing for precise characterisation of particle-sensing devices. 
+%A profound understanding of the performance of the beam telescope as a whole is obtained by a detailed characterisation of the sensors themselves. 
+%The differential intrinsic resolution as measured in a $\Mimosa$ sensor is extracted using an iterative pull method, and various quantities
+% that depend on the size of the cluster produced by a traversing charged particle are discussed:
+% the residual distribution, the intra-pixel residual-width distribution and the intra-pixel density distribution of track incident positions.\\
+
+Development of the ELAD sensors for increasing the charge sharing. The ELAD sensors make use of deep implants for creating the non-homogeneous electric field. In order to find an optimal sensor design, detailed simulation studies have been conducted using SYNOPSYS TCAD. For specifying sensors design 2 types of simulations were done: simulation of the electric field and drift simulations. A description of the multi-layer production process is presented, which represents a new production technique allowing for deep bulk engineering.  
+
+
 
 \noindent
-Keywords: CMOS pixel sensor, Beam telescope, Intrinsic resolution, Intra-pixel studies % need to be specified during submission
+Keywords: implants, R$\&$D, resolution, tracker, TCAD % need to be specified during submission
 
 %Additionally, we discuss intra-pixel residuals the differential intrinsic resolution and the angle resolution of the beam telescope used. 
 %Charge collection simulations of the sensor are compared to the measured results. 
@@ -211,9 +216,9 @@ Keywords: CMOS pixel sensor, Beam telescope, Intrinsic resolution, Intra-pixel s
 \section{Introduction}
 \label{sec:intro}
 \ifdefined\notFOREPJ
-% \input{content/intro}
+\input{/Users/tweety/Documents/PhD/TIPP/TIPP17/content/intro.tex}
 \else
- \input{intro}
+ \input{intro.tex}
 \fi
 % 
 % \section{Beamlines}
@@ -224,20 +229,29 @@ Keywords: CMOS pixel sensor, Beam telescope, Intrinsic resolution, Intra-pixel s
 %  \input{beam_lines}
 % \fi
 
-\section{Experimental set-up}
-\label{sec:tscope}
+\section{Concept}
+\label{sec:concept}
 \ifdefined\notFOREPJ
-% \input{content/tscope}
+% \input{content/concept}
 \else
- \input{tscope}
+ \input{concept}
 \fi
 
-\section{Results and discussion}
+\section{TCAD simulations}
+\label{sec:simulations}
+\ifdefined\notFOREPJ
+% \input{content/simulations}
+\else
+ \input{simulations}
+\fi
+
+
+\section{Production}
 \label{sec:discussion}
 \ifdefined\notFOREPJ
-% \input{content/discussion}
+% \input{content/production}
 \else
- \input{discussion}
+ \input{production}
 \fi
 
 
@@ -252,17 +266,12 @@ Keywords: CMOS pixel sensor, Beam telescope, Intrinsic resolution, Intra-pixel s
 %\ifdefined\notFOREPJ
 %\else
 \section*{Acknowledgements}
-The test-beam support at DESY is highly appreciated. 
-This work is supported by the Commission of the European Communities under the 6th Framework Programme 'structuring the European research area', contract number RII3-026126.
-Furthermore, strong support from the Helmholtz Association and the BMBF is acknowledged.
-%contract number RII3-CT-2006-026126.
-%Funding agencies AIDA, EUDET
 
 {\small
 \section*{Data and materials}
-The datasets supporting the conclusions of this article are available from reference \cite{jansen_data}.
-The software used is available from the github repositories: 1) \url{https://github.com/eutelescope/eutelescope}, 2) \url{https://github.com/simonspa/eutelescope/}, branch \textit{scattering}
- and 3) \url{https://github.com/simonspa/resolution-simulator}.
+%The datasets supporting the conclusions of this article are available from reference \cite{jansen_data}.
+%The software used is available from the github repositories: 1) \url{https://github.com/eutelescope/eutelescope}, 2) \url{https://github.com/simonspa/eutelescope/}, branch \textit{scattering}
+% and 3) \url{https://github.com/simonspa/resolution-simulator}.
 %For the presented analysis, these specific tags have been used: \cite{jansen_2016_49065}.
 
 % \section*{Competing interests}
