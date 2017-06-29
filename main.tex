@@ -27,6 +27,7 @@
 %\usepackage{draftwatermark}
 %\SetWatermarkScale{5}
 \usepackage{setspace}
+\usepackage{indentfirst}
 
 
 %general stuff 
@@ -185,32 +186,15 @@ ${}^{\textrm{a}}$ Deutsches Elektronen-Synchrotron DESY, Hamburg, Germany\\
 
 \begin{abstract}
 \noindent
-%Detailed studies of the resolution of a $\eudet$-type beam telescope are carried out using the $\Datura$ beam telescope as an example. 
-%The $\eudet$-type beam telescopes make use of CMOS $\Mimosa$ pixel detectors for particle tracking allowing for precise characterisation of particle-sensing devices. 
-%A profound understanding of the performance of the beam telescope as a whole is obtained by a detailed characterisation of the sensors themselves. 
-%The differential intrinsic resolution as measured in a $\Mimosa$ sensor is extracted using an iterative pull method, and various quantities
-% that depend on the size of the cluster produced by a traversing charged particle are discussed:
-% the residual distribution, the intra-pixel residual-width distribution and the intra-pixel density distribution of track incident positions.\\
 
-Development of the ELAD sensors for increasing the charge sharing. The ELAD sensors make use of deep implants for creating the non-homogeneous electric field. In order to find an optimal sensor design, detailed simulation studies have been conducted using SYNOPSYS TCAD. For specifying sensors design 2 types of simulations were done: simulation of the electric field and drift simulations. A description of the multi-layer production process is presented, which represents a new production technique allowing for deep bulk engineering.  
+Development of the ELAD sensors for increasing the position resolution using the charge sharing is described. The ELAD sensors make use of the non-homogeneous electric field to achieve the lateral drift of a charge cloud. In order to find an optimal sensor design, detailed simulation studies have been conducted using SYNOPSYS TCAD. To specify the design of the sensors,  2 types of simulations were done: simulation of the electric field and drift simulations. A multi-layer-production technique, which allows for the deep-bulk engineering, is is extensively described.  
 
 
 
 \noindent
-Keywords: implants, R$\&$D, resolution, tracker, TCAD % need to be specified during submission
+Keywords: Deep bulk engineering, Semiconductor detectors, R$\&$D, Particle tracking, TCAD % need to be specified during submission
 
-%Additionally, we discuss intra-pixel residuals the differential intrinsic resolution and the angle resolution of the beam telescope used. 
-%Charge collection simulations of the sensor are compared to the measured results. 
-%Finally, the amount of angular scattering in aluminium targets for thicknesses from as small as $\SI{10}{\um}$ to $\SI{500}{\um}$ is measured and compared to predictions and simulations. 
 \end{abstract}
-
-% Abstract with no \commands unless numbers for submission process
-
-
-% \ifdefined\notFOREPJ
-% \tableofcontents
-% \else
-% \fi
 
 
 \section{Introduction}
@@ -229,18 +213,18 @@ Keywords: implants, R$\&$D, resolution, tracker, TCAD % need to be specified dur
 %  \input{beam_lines}
 % \fi
 
-\section{Concept}
+\section{The concept of ELAD sensors}
 \label{sec:concept}
 \ifdefined\notFOREPJ
-% \input{content/concept}
+\input{/Users/tweety/Documents/PhD/TIPP/TIPP17/content/concept.tex}
 \else
- \input{concept}
+ \input{concept.tex}
 \fi
 
 \section{TCAD simulations}
 \label{sec:simulations}
 \ifdefined\notFOREPJ
-% \input{content/simulations}
+ \input{/Users/tweety/Documents/PhD/TIPP/TIPP17/content/simulations}
 \else
  \input{simulations}
 \fi
