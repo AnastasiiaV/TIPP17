@@ -28,6 +28,8 @@
 %\SetWatermarkScale{5}
 \usepackage{setspace}
 \usepackage{indentfirst}
+\usepackage{txfonts}
+\usepackage{float}
 
 
 %general stuff 
@@ -187,11 +189,11 @@ ${}^{\textrm{a}}$ Deutsches Elektronen-Synchrotron DESY, Hamburg, Germany\\
 \begin{abstract}
 \noindent
 
-Development of the ELAD sensors for increasing the position resolution using the charge sharing is described. 
-The ELAD sensors make use of the non-homogeneous electric field to achieve the lateral drift of a charge cloud. 
+Concept of the Enhanced lateral drift sensors (ELAD) sensors for getting at the improvement of the position resolution. 
+The ELAD sensors make use of a non-homogeneous electric field to achieve the lateral drift of a charge cloud, this enables improved charge sharing over the entire pitch. 
 In order to find an optimal sensor design, detailed simulation studies have been conducted using SYNOPSYS TCAD.
-To specify the design of the sensors,  2 types of simulations were done: simulation of the electric field and drift simulations. 
-A multi-layer-production technique, which allows for the deep-bulk engineering, is is extensively described.  
+In order to find optimal parameters of the design of the sensors,  two types of simulations have been carried out: simulation of the electric field and charge drift simulations. 
+A multi-layer-production technique, which allows for the deep-bulk engineering, is sketched herein.  
 
 \noindent
 Keywords: Deep bulk engineering, Semiconductor detectors, R$\&$D, Particle tracking, TCAD % need to be specified during submission
@@ -232,7 +234,7 @@ Keywords: Deep bulk engineering, Semiconductor detectors, R$\&$D, Particle track
 \fi
 
 
-\section{Production}
+\section{Planned production}
 \label{sec:production}
 \ifdefined\notFOREPJ
  \input{content/production}
@@ -254,7 +256,7 @@ Keywords: Deep bulk engineering, Semiconductor detectors, R$\&$D, Particle track
 \section*{Acknowledgements}
 This project is funded via PIER Hamburg, Grant no.PIF-2015-37.
 
-{\small
+%{\small
 %\section*{References}
 %The datasets supporting the conclusions of this article are available from reference \cite{jansen_data}.
 %The software used is available from the github repositories: 1) \url{https://github.com/eutelescope/eutelescope}, 2) \url{https://github.com/simonspa/eutelescope/}, branch \textit{scattering}
@@ -264,18 +266,10 @@ This project is funded via PIER Hamburg, Grant no.PIF-2015-37.
 % \section*{Competing interests}
 % The authors declare that they have no competing interests.
 
-% [1] Synopsys Inc. Mountain View, CA, USA.
-% 
-% [2] Synopsys Inc Sentaurus Device Users Guide, Version G-2012.06, 2012.
-% 
-% [3] G. Lutz. Semiconductor Radiation Detectors. Springer-Verlag, Berlin, Heidelberg, 2007. ISBN 978-3-540-71678-5.
-% 
-% [4] G. Pellegrini, C. Fleta, F. Campabadal, S. Di'ez, M. Lozano, J.M. Rafi', M. Ulla'n. Technology development of p-type microstrip detectors with radiation hard p-spray isolation. In Nuclear Instruments and Methods in Physics Research, 2007. A 566 (2006) 360-365
-
 
 \bibliographystyle{IEEEtran}
-\bibliography{bibtex/refs}
-}
+\bibliography{bibtex/refs.bib}
+%}
 
 \end{document}
 
