@@ -2,6 +2,7 @@
 Extensive simulation is essential for a new sensor development. 
 The  Technology Computer-Aided Design (TCAD) SYNOPSYS was selected  as a tool for simulations, widely used for the development and optimization of semiconductor processing technologies and devices ~\cite{Synopsys}. 
 In particular, three tools have been exploited: SPROCESS, SDE and SDEVICE. 
+%FIXME introduce variable for SPROCESS, SDE, SDEVICE, ...
 SPROCESS simulates the fabrication steps in silicon process technologies. 
 SDE builds and edits device structures using geometric operations. 
 SDEVICE simulates the electrical, thermal, and optical characteristics of silicon and compound semiconductor devices ~\cite{SynopsysIncG-2012.06}.
@@ -43,21 +44,21 @@ It has shown that the charge carriers created near an electrode are collected by
 Thereby, the drift simulation proves that the charge sharing in ELAD sensors is possible on condition of using the non-homogeneous electric field in $x$ direction. 
 
 \begin{figure}[H]
-\begin{minipage}[h]{0.24\linewidth}
-\center{\includegraphics[trim= 0 0 0 0, height=7.5cm]{pictures/driftt1.png} \\ (1)}
-\end{minipage}
-\begin{minipage}[h]{0.24\linewidth}
-\center{\includegraphics[trim= 0 0 0 0, height=7.5cm]{pictures/driftt2.png} \\(2)}
-\end{minipage}
-\begin{minipage}[h]{0.24\linewidth}
-\center{\includegraphics[trim= 0 0 0 0, height=7.5cm]{pictures/driftt3.png} \\(3)}
-\end{minipage}
-\begin{minipage}[h]{0.24\linewidth}
-\center{\includegraphics[trim= 0 0 0 0, width=2cm]{pictures/driftscale.png}}
-\end{minipage}
+ \begin{minipage}[h]{0.24\linewidth}
+ \center{\includegraphics[trim= 0 0 0 0, height=7.5cm]{pictures/driftt1.png} \\ (1)}
+ \end{minipage}
+ \begin{minipage}[h]{0.24\linewidth}
+ \center{\includegraphics[trim= 0 0 0 0, height=7.5cm]{pictures/driftt2.png} \\(2)}
+ \end{minipage}
+ \begin{minipage}[h]{0.24\linewidth}
+ \center{\includegraphics[trim= 0 0 0 0, height=7.5cm]{pictures/driftt3.png} \\(3)}
+ \end{minipage}
+ \begin{minipage}[h]{0.24\linewidth}
+ \center{\includegraphics[trim= 0 0 0 0, width=2cm]{pictures/driftscale.png}}
+ \end{minipage}
 \caption[short description here]
-  {TCAD drift simulation in the ELAD sensor. (1) at $t = 10^{-12} s$, (2) at $t = 10^{-10} s$, (3) at $t = 1.2 \cdot 10^{-9} s$. 
- }
+  {TCAD drift simulation in the ELAD sensor. (1) at $t = 10^{-12} s$, (2) at $t = 10^{-10} s$, (3) at $t = 1.2 \cdot 10^{-9} s$.}
 \label{fig:drift}
 \end{figure}
 
+ 
