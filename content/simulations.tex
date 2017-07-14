@@ -32,11 +32,12 @@ The total sensor thickness is 150 $\muup$m, the pitch size is 55 $\muup$m in agr
 \label{fig:geo-elfield}
 \end{figure}
 
-The TCAD simulation of an electric field shows that the p- and n- deep implants lead to cause changes of the potential Fig.~\ref{fig:geo-elfield}~(B). 
-The mean electric field is similar to an electric field in a standard design sensor, but the local higher dose implants change the field locally, i.e.\ include an electric field component in $x$ direction. 
-The charges drift towards middle between strip/pixel and change their drift path due to diffusion.
+The electric field simulation shows that the p- and n- deep implants lead to cause changes of the potential Fig.~\ref{fig:geo-elfield}~(B). %FIXME lead to cause ?!
+The mean electric field is similar to an electric field in a standard design sensor, but the deep implants change the field locally, i.e.\ include an electric field component in $x$-direction. %FIXME induce, not include
+The charges drift towards middle between two strips/pixels and change their drift path due to diffusion. %FIXME ... the middle, %FIXME and change their drift path due to diffusion. not clear for the reader
 Red zones in Fig.~\ref{fig:geo-elfield}~(B) force electrons to change their drift path to the right, blue zones to the left, consequently create the possibility of collecting the charge by two strips. 
-In addition the simulation shows that the non-homogeneous electric field in $x$-direction in the ELAD sensor is stable in time. 
+%FIXME it is not the read zone that forces any one to do anything, rather: Red zones indicate areas where the eletric field blablabla and therfore electrons drift blablabla. 
+In addition the simulation shows that the non-homogeneous electric field in $x$-direction is stable over time. 
 
 
 \begin{figure}[t]
@@ -58,9 +59,9 @@ In addition the simulation shows that the non-homogeneous electric field in $x$-
 \end{figure} %FIXME pictures are of bas quality, use high resolution! or at best vector grpahics (eps file)
 
 To understand the behaviour of charge carriers in the ELAD sensor the drift simulation has been carried out. 
-It has shown that the charge carriers created near an electrode are collected by it, but the charge created beneath the deep implants area
+It has shown that the charge carriers created near an electrode are collected by it, but the charge created beneath the deep implants area %FIXME It shows (GRAMMAR: because the simluations still show that, they have not stopped showing that)
  changes its drift path and is collected by two strips Fig.~\ref{fig:drift}.  
-Thereby, the drift simulation proves that the charge sharing in ELAD sensors is possible on condition of using the non-homogeneous electric field in $x$-direction. 
+Thereby, the drift simulation supports the basic concept of charge sharing in ELAD sensors making use of a non-homogeneous electric field in $x$-direction. 
 
 
  
