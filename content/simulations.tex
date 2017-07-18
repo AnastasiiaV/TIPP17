@@ -7,16 +7,6 @@ SPROCESS simulates the fabrication steps in silicon process technologies.
 SDE builds and edits device structures using geometric operations. 
 SDEVICE simulates the electrical, thermal, and optical characteristics of silicon and compound semiconductor devices~\cite{SynopsysIncG-2012.06}.
 
-The parameters which should be optimised are the width and depth of implants, distance within/to next layer, position/shift to neighbouring layer,
- the number of layers and optimal doping concentrations for deep implants.
-The profile of the electric field yielding an optimal charge sharing is a result of the scan over the mentioned parameters. 
-
-The TCAD geometry of the ELAD sensor Fig. \ref{fig:geo-elfield} (A) contain p-type sensor, three layers of n and p deep implants, p-spray isolation, readout implants, readout electrodes, SiO${}_2$ and backplane. 
-With the p-spray isolation technique a shallow unstructured p implant prevents the build-up of an electron layer below the oxide~\cite{Lutz}. 
-The p-spray concentration was chosen according to the value of the breakdown voltage~\cite{Pellegrini}. 
-The shape of implants is described by using an error function. 
-The total sensor thickness is 150 $\muup$m, the pitch size is 55 $\muup$m in agreement with TimePix3~\cite{TimePix}. readout chip, which is foreseen to be used later on. 
-
 \begin{figure}[t]
 \begin{minipage}[h]{0.5\linewidth}
 \center{\includegraphics[trim= 0 0 0 0, height=7cm]{pictures/geometry.png} \\ (A)}
@@ -32,26 +22,36 @@ The total sensor thickness is 150 $\muup$m, the pitch size is 55 $\muup$m in agr
 \label{fig:geo-elfield}
 \end{figure}
 
-The electric field simulation shows that the p- and n- deep implants lead to cause changes of the potential Fig.~\ref{fig:geo-elfield}~(B). %FIXME lead to cause ?!
-The mean electric field is similar to an electric field in a standard design sensor, but the deep implants change the field locally, i.e.\ include an electric field component in $x$-direction. %FIXME induce, not include
-The charges drift towards middle between two strips/pixels and change their drift path due to diffusion. %FIXME ... the middle, %FIXME and change their drift path due to diffusion. not clear for the reader
-Red zones in Fig.~\ref{fig:geo-elfield}~(B) force electrons to change their drift path to the right, blue zones to the left, consequently create the possibility of collecting the charge by two strips. 
+The parameters which should be optimised are the width and depth of implants, distance within/to next layer, position/shift to neighbouring layer,
+ the number of layers and optimal doping concentrations for deep implants.
+The profile of the electric field yielding an optimal charge sharing is a result of the scan over the mentioned parameters. 
+
+The TCAD geometry of the ELAD sensor Fig. \ref{fig:geo-elfield}~(A) contain p-type sensor, three layers of n and p deep implants, p-spray isolation, readout implants, readout electrodes, SiO${}_2$ and backplane. 
+With the p-spray isolation technique a shallow unstructured p implant prevents the build-up of an electron layer below the oxide~\cite{Lutz}. 
+The p-spray concentration was chosen according to the value of the breakdown voltage~\cite{Pellegrini}. 
+The shape of implants is described by using an error function. 
+The total sensor thickness is 150 $\muup$m, the pitch size is 55 $\muup$m in agreement with TimePix3~\cite{TimePix}. readout chip, which is foreseen to be used later on. 
+
+The electric field simulation shows that the p- and n- deep implants lead to changes the potential Fig.~\ref{fig:geo-elfield}~(B). %FIXME lead to cause ?!
+The mean electric field is similar to an electric field in a standard design sensor, but the deep implants change the field locally, i.e.\ incuce an electric field component in $x$-direction. %FIXME induce, not include
+The charges drift towards the middle between two strips/pixels and change their drift path due to diffusion. %FIXME ... the middle, %FIXME and change their drift path due to diffusion. not clear for the reader
+Red zones in Fig.~\ref{fig:geo-elfield}~(B) indicate areas where the electric field force electrons to change their drift path to the right, blue zones - to the left, consequently create the possibility of collecting the charge by two strips. 
 %FIXME it is not the read zone that forces any one to do anything, rather: Red zones indicate areas where the eletric field blablabla and therfore electrons drift blablabla. 
 In addition the simulation shows that the non-homogeneous electric field in $x$-direction is stable over time. 
 
 
 \begin{figure}[t]
  \begin{minipage}[h]{0.24\linewidth}
- \center{\includegraphics[trim= 0 0 0 0, height=7.5cm]{pictures/driftt1.png} \\ (1)}
+ \center{\includegraphics[trim= 0 0 0 0, height=7cm]{pictures/driftt1_1.png} \\ (1)}
  \end{minipage}
  \begin{minipage}[h]{0.24\linewidth}
- \center{\includegraphics[trim= 0 0 0 0, height=7.5cm]{pictures/driftt2.png} \\(2)}
+ \center{\includegraphics[trim= 0 0 0 0, height=7cm]{pictures/driftt2_1.png} \\(2)}
  \end{minipage}
  \begin{minipage}[h]{0.24\linewidth}
- \center{\includegraphics[trim= 0 0 0 0, height=7.5cm]{pictures/driftt3.png} \\(3)}
+ \center{\includegraphics[trim= 0 0 0 0, height=7cm]{pictures/driftt3_1.png} \\(3)}
  \end{minipage}
  \begin{minipage}[h]{0.24\linewidth}
- \center{\includegraphics[trim= 0 0 0 0, width=2cm]{pictures/driftscale.png}}
+ \center{\includegraphics[trim= 0 0 0 0, width=2cm]{pictures/driftscale1.png}}
  \end{minipage}
 \caption[short description here]
   {TCAD drift simulation in the ELAD sensor. (1) at $t = \SI{e-12}{\sec}$, (2) at $t = \SI{e-10}{\s}$, (3) at $t = \SI{1.2e-9}{\s}$.}
@@ -59,7 +59,7 @@ In addition the simulation shows that the non-homogeneous electric field in $x$-
 \end{figure} %FIXME pictures are of bas quality, use high resolution! or at best vector grpahics (eps file)
 
 To understand the behaviour of charge carriers in the ELAD sensor the drift simulation has been carried out. 
-It has shown that the charge carriers created near an electrode are collected by it, but the charge created beneath the deep implants area %FIXME It shows (GRAMMAR: because the simluations still show that, they have not stopped showing that)
+It shows that the charge carriers created near an electrode are collected by it, but the charge created beneath the deep implants area %FIXME It shows (GRAMMAR: because the simluations still show that, they have not stopped showing that)
  changes its drift path and is collected by two strips Fig.~\ref{fig:drift}.  
 Thereby, the drift simulation supports the basic concept of charge sharing in ELAD sensors making use of a non-homogeneous electric field in $x$-direction. 
 
